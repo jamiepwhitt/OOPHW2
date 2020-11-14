@@ -15,11 +15,11 @@ public class oophw2 {
 	        for (i=2; i<=n; i++) 
 	            res *= i; 
 	        return res; 
-	    }  	
-
+	    }
+	
 //calculator
 	public static void main(String[] args) {
-		
+	
 	Scanner scanner = new Scanner(System.in);
 	System.out.println("Input the first number: ");
 	int n1 = scanner.nextInt();
@@ -33,7 +33,7 @@ public class oophw2 {
 	int square = n1 * n1;
 			  System.out.printf("Sum = %d\nMinus = %d\nMultiply = %d\nSubtract = %d\nDivide = %d\nSquare = %d\n ", sum, minus, multiply, subtract, divide, square);
 			  
-			  String magicCalculator = askQuestion(scanner, "Use the magic calculator?");
+			  String magicCalculator = askQuestion(scanner, "Use the magic calculator? Yes or No");
 				 if (magicCalculator.equals("Yes") || magicCalculator.equals("Y")){
 	//Magic Calculator
 	
@@ -42,20 +42,21 @@ public class oophw2 {
 					 int n3 = scanner.nextInt();		
 			//sqrt
 					 double e = n3;
-					 System.out.println(Math.sqrt(e));
+					 System.out.println("Sqrt= " + (Math.sqrt(e)));
 			//sin
 					 double a = Math.toRadians(n3);
-					 System.out.println(Math.sin(a));
+					 System.out.println("Sin= " + (Math.sin(a)));
 			//cos
 					 double b = Math.toRadians(n3);
-					 System.out.println(Math.cos(b));
+					 System.out.println("Cos= " + (Math.cos(b)));
 			//tangent
 					 double c = Math.toRadians(n3);
-					 System.out.println(Math.tan(c));
+					 System.out.println("Tan= " + (Math.tan(c)));
 			//factorial
 					 int n = n3; 
-				        System.out.println(factorial(n));
+				        System.out.println("!= " + (factorial(n)));
 	}
+				 
 	}
 };
 	
